@@ -1,0 +1,109 @@
+/* [4. Navigation ]  */
+
+.nav {
+    position: relative;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: #ffffff;
+  }
+  .nav__container {
+    position: relative;
+  }
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+  .nav__list-submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 45px;
+    left: -50px;
+    min-width: 245px;
+    padding: 20px 0;
+    padding-left: 60px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    transition: all .3s ease .15s;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+  .nav__list-submenu .nav__list-submenu {
+    left: 100%;
+    top: -70%;
+  }
+  .nav__item {
+    display: inline-block;
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .nav__item:first-child {
+    padding-left: 10px;
+  }
+  .nav__item > a.active {
+    font-weight: 400;
+  }
+  .nav__item--active::after {
+    font-weight: normal;
+  }
+  .nav__item:hover > .nav__list-submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav__item a {
+    font-size: 14px;
+    color: #262626;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+  .nav__item a:hover {
+    opacity: 0.8;
+  }
+  .nav__item-submenu {
+    position: relative;
+    padding: 5px 0;
+  }
+  .nav__item-submenu--active {
+    font-weight: normal;
+  }
+  .nav__item-submenu:hover > .nav__list-submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav__search {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .nav__search svg {
+    width: 24px;
+    height: 24px;
+  }
+  .nav__search:hover svg {
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+  .nav .slicknav_menu .slicknav_btn {
+    display: none;
+  }

@@ -3,17 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caneryaniza/https---github.com-caneryaniza-secondrepo.git"
+    "url": "git+https://github.com/caneryaniza/blog.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/caneryaniza/https---github.com-caneryaniza-secondrepo/issues"
+    "url": "https://github.com/caneryaniza/blog/issues"
   },
-  "homepage": "https://github.com/caneryaniza/https---github.com-caneryaniza-secondrepo#readme"
+  "homepage": "https://github.com/caneryaniza/blog#readme"
 }

@@ -1,9 +1,41 @@
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
+
+import MainNavigation from "./shared/components/Navigation/MainNavigation";
+import { AuthContext } from "./shared/context/auth-context";
+import { useAuth } from "./shared/hooks/auth-hook";
+
 const App = () => {
+  const { token, login, logout, userId } = useAuth();
+
+  let routes;
+  if (token) {
+    routes = (
+      <Switch>
+        <Route path="/" exact></Route>
+      </Switch>
+    );
+  }
   return (
-    <div className="App">
-      Test
-    </div>
+    <AuthContext.Provider
+      value={{
+        isLoggedIn: !!token,
+        token: token,
+        userId: userId,
+        login: login,
+        logout: logout,
+      }}
+    >
+      <Router>
+        <header>
+          <MainNavigation />
+        </header>
+        <main></main>
+        <footer></footer>
+      </Router>
+    </AuthContext.Provider>
   );
-}
+};
 
 export default App;
