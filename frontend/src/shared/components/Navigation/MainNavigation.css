@@ -1,13 +1,30 @@
-
 .nav--mobile {
   position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    height: 100vh;
-    width: 70%;
-    background: white;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 26%);
+  top: 0;
+  left: 0;
+  width: 265px;
+  padding: 75px;
+  min-height: 100%;
+  height: 100vh;
+  overflow: auto;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  background-color: #eaeaea;
+  transition: left 0.7s ease;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* position: fixed;
+  
+  
+  width: 70%;
+  background: white;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 26%); */
 }
 
 /*------------------------------------------------------------------
@@ -19,7 +36,6 @@
 @media (max-width: 991px) {
   .nav-toggle {
     display: block;
-    margin-top: 20px;
     text-align: center;
   }
   .nav-toggle__icon {
@@ -30,6 +46,7 @@
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
+    margin-top: 20px;
   }
   .nav-toggle__icon:hover {
     opacity: 0.8;
@@ -40,7 +57,5 @@
   .nav-toggle__icon:active {
     box-shadow: none;
   }
-  .nav__item:first-child {
-    padding-left: initial;
-  }
+  
 }
