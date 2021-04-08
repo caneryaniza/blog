@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
+import MainPage from './places/pages/MainPage';
 import MainFooter from "./shared/components/Footer/MainFooter";
 
 import { AuthContext } from "./shared/context/auth-context";
@@ -33,7 +34,9 @@ const App = () => {
         <header>
           <MainNavigation />
         </header>
-        <main></main>
+        <main>
+          <MainPage/>
+        </main>
         <footer className="footer">
           <MainFooter />
         </footer>

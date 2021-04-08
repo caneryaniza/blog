@@ -35,6 +35,12 @@ const MainNavigation = () => {
       <nav className="nav">
         <NavLinks isMobile={false} />
       </nav>
+      <div className="col-md-12  header__logo">
+      <div className="logo">
+          <h1><a className="logo__link" href="index.html">Caner.</a></h1>
+          <div className="logo__description">Personal Blog Template</div>
+        </div>
+      </div>
     </React.Fragment>
   );
 };

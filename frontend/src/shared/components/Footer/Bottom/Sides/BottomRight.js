@@ -1,12 +1,12 @@
 import React from 'react';
 
+import Socials from '../../../UIElements/Socials.js';
+
 import './BottomRight.css';
 
 const BottomRight = () =>{
     return (
-        <div className="col-sm-4  col-md-4  footer__bottom-social">
-            
-        </div>
+        <Socials SocialClassName="col-sm-4  col-md-4  footer__bottom-social"/>
     );
 }
 

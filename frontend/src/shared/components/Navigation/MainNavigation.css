@@ -59,3 +59,59 @@
   }
   
 }
+
+/* [2. Header ]  */
+
+.header {
+  margin-top: 0;
+  border: none;
+}
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header__logo {
+  margin-top: 50px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .header__logo {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+/*------------------------------------------------------------------
+[3. Logo ] 
+*/
+.logo h1 {
+  margin-top: 0;
+}
+.logo p {
+  font-weight: 500;
+  line-height: 1.1;
+}
+.logo__link {
+  font-size: 48px;
+  color: #262626;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.logo__link:hover {
+  color: #262626;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.logo__link:focus {
+  color: #262626;
+  text-decoration: none;
+}
+.logo__description {
+  font-size: 11px;
+  text-transform: uppercase;
+}
