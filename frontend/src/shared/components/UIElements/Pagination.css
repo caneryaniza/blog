@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------
+[11. Pagination ] 
+*/
+.blog-pagination__items {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .blog-pagination__item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .blog-pagination__item--active {
+    font-weight: normal;
+  }
+  .blog-pagination__item a {
+    color: #262626;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+  .blog-pagination__item a:hover {
+    opacity: 0.8;
+  }
